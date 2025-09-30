@@ -1,0 +1,17 @@
+tests:
+  - name: test 1
+    stdin : "5.972e21 73.48e18 384400"
+    stdout:
+      - contains: "1.98e+20"
+  
+  - name: test 2
+    stdin : "5.972e21 1988e+24 149.6e6"
+    stdout:
+      - contains: "3.54e+22"
+
+  - name: test 3
+    stdin : "5.972e21 420 670"
+
+    stdout:
+      - contains: "3.73e+06"
+
