@@ -23,7 +23,7 @@ int main(int argc, const char *argv[])
 		{
 			const double G = 6.67e-11;
 
-			double Force = G * (Mass1/1000) * (Mass2/1000) / ((Distance/1000)*(Distance/1000));
+			double Force = G * Mass1 * Mass2 / (Distance*Distance);
 
 			printf("%.3g", Force);
 		}

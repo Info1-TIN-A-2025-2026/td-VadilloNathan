@@ -1,16 +1,16 @@
 tests:
   - name: test 1
-    stdin : "5.972e21 73.48e18 384400"
+    stdin : "5.972e24 7.348e22 3.844e8"
     stdout:
       - contains: "1.98e+20"
   
   - name: test 2
-    stdin : "5.972e21 1988e+24 149.6e6"
+    stdin : "5.972e24 1.988e+30 1.496e11"
     stdout:
       - contains: "3.54e+22"
 
   - name: test 3
-    stdin : "5.972e21 420 670"
+    stdin : "5.972e24 4.2e5 6.7e5"
 
     stdout:
       - contains: "3.73e+06"
