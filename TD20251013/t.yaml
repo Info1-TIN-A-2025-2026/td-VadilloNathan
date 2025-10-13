@@ -1,0 +1,34 @@
+tests:
+  - name: test 1
+    stdin : "245.27 200 0.924"
+    stdout:
+      - contains: "54.6"
+  
+  - name: test 2
+    stdin : "1 1 0.1"
+    stdout:
+      - contains: "0.035"
+
+  - name: test 3
+    stdin : "500 1000 1"
+
+    stdout:
+      - contains: "0.413"
+
+  - name: test 3
+    stdin : "-1 1000 1"
+
+    stdout:
+      - contains: "Error: StockPrice must be positive"
+
+  - name: test 3
+    stdin : "5 -5 1"
+
+    stdout:
+      - contains: "Error: Strikeprice must be positive"
+
+  - name: test 3
+    stdin : "1 1000 -1"
+
+    stdout:
+      - contains: "Error: ExpirationDays must be positive"
