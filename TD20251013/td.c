@@ -53,5 +53,5 @@ int main(int argc, const char *argv[])
 	nd2 = 1 - exp(-d2 * d2 / 2) / sqrt(2 * M_PI) * (0.319381530 * (1 / (1 + 0.2316419 * d2)) + -0.356563782 * pow((1 / (1 + 0.2316419 * d2)), 2) + 1.781477937 * pow((1 / (1 + 0.2316419 * d2)), 3) + -1.821255978 * pow((1 / (1 + 0.2316419 * d2)), 4) + 1.330274429 * pow((1 / (1 + 0.2316419 * d2)), 5));
 	CallPrice = StockPrice * nd1 - StrikePrice * exp(-RiskFreeRate * DaysToExpiration) * nd2;
 
-	printf("The call price is: %.2f\n", CallPrice);
+	printf("The call price is: %.9f\n", CallPrice);
 }
