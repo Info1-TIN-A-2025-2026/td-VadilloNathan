@@ -21,19 +21,19 @@ tests:
     stdout:
       - contains: "0.002739726"
 
-  - name: test 3
+  - name: test 4
     stdin : "-1 1000 1"
 
     stdout:
       - contains: "Error: StockPrice must be positive"
 
-  - name: test 3
+  - name: test 5
     stdin : "5 -5 1"
 
     stdout:
       - contains: "Error: StrikePrice must be positive"
 
-  - name: test 3
+  - name: test 6
     stdin : "1 1000 -1"
 
     stdout:
