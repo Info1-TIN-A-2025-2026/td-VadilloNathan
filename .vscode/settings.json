@@ -14,4 +14,7 @@
     ],
     "terminal.integrated.shellIntegration.enabled": false,
     "terminal.integrated.shellIntegration.decorationsEnabled": true,
+    "files.associations": {
+        "type_traits": "c"
+    },
 }
