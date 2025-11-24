@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdbool.h>
-#include <assert.h>
 #include <math.h>
 
 // int f(unsigned int t, int *a, int *b, int *c); // signifie que a contient l'adresse d'une variable de type int
