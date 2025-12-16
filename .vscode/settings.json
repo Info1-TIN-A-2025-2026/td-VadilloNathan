@@ -16,6 +16,7 @@
     "terminal.integrated.shellIntegration.decorationsEnabled": true,
     "files.associations": {
         "type_traits": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "stdlib.h": "c"
     },
 }
