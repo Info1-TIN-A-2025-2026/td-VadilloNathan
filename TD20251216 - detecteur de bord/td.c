@@ -9,6 +9,7 @@
 void fil_f(unsigned char t[H][L]);
 void display(unsigned char t[H][L]);
 void fil_g(unsigned char t[H][L], unsigned char p[H][L]);
+void fil_r(unsigned char t1[H][L], unsigned char t2[H][L], unsigned char p[H][L]);
 
 int main(int argc, const char *argv[])
 {
@@ -21,7 +22,10 @@ int main(int argc, const char *argv[])
 	fil_f(f);
 	display(f);
 
-	fil_g(f, r);
+	fil_g(f, g);
+	display(g);
+
+	fil_r(f, g, r);
 	display(r);
 
 	return 0;
@@ -73,3 +77,15 @@ void fil_g(unsigned char t[H][L], unsigned char p[H][L])
 	}
 
 }
+
+void fil_r(unsigned char t1[H][L], unsigned char t2[H][L], unsigned char p[H][L])
+{
+	for (int i = 0; i < H; i++)
+	{
+		for (int z = 0; z < L; z++)
+		{
+			p[i][z] = t2[i][z] - t1[i][z];
+		}
+	}
+}
+
