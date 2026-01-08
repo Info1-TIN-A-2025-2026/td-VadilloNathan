@@ -34,15 +34,15 @@
 // 	return 0;
 // }
 
-int f(double x, double y, double *rho, double *theta); 
+int f(double x, double y, double *rho, double *theta);
 
 int main(int argc, const char *argv[])
 {
- 	double m = 0;
- 	double s = 0;
+	double m = 0;
+	double s = 0;
 
- 	printf("m= %p\n", &m);
- 	printf("s= %p\n", &s);
+	printf("m= %p\n", &m);
+	printf("s= %p\n", &s);
 
 	int i = f(1, 2, &m, &s);
 
